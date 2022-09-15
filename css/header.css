@@ -1,0 +1,40 @@
+
+/* 
+    Created on : 23 jul. 2022, 05:31:36
+    Author     : BONATTI
+*/
+
+
+.header{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;  
+    background:red;
+    /*border-right: 2px solid blueviolet;*/
+
+}
+.cont-img{
+    margin-top: 10px;
+}
+.logo{
+    
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+.nombre{
+    font-size: 1rem;
+    color: black;
+}
+
+
+
+
+

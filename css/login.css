@@ -1,0 +1,49 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 6 set. 2022, 09:46:01
+    Author     : BONATTI
+*/
+
+.fondo{
+    background-image: url(../img/fondo05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@font-face {
+  font-family: titulo;
+  src: url(../fuente/Roboto-Bold.ttf);
+}
+.mensaje-emergente{
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+  border: 4px solid #FE0304;
+  background-color: #FE0304;
+  font-family: titulo;
+  /* Centramos el texto del contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+    width: 35%;
+    margin-top: 10%;
+    background-color: #11375099;
+}
+
+.hum{
+border-radius: 6px;
+    padding: 30px;
+}
+.caj{
+    opacity: 0.8;
+}
+
+h2,label{
+    font-family: titulo;
+    color:#fff;
+}
+
