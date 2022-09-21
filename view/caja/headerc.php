@@ -18,27 +18,27 @@
 
                 <div class=" d-grid gap-2 botn mt-3">
                     <a href="<?php
-                    echo "../MuniSoft/usuarioss.php";
+                    echo "./usuarioss.php?var=select";
                     ?>" class="btn " >Usuarios </a>
                 </div>
                 <div class="d-grid gap-2 botn mt-3">
                     <a href="<?php
-                    echo "../MuniSoft/pagos.php";
+                    echo "./pagos.php";
                     ?>" class="btn " >Pagos </a>
                 </div>
                 <div class="d-grid gap-2 botn mt-3">
                     <a href="<?php
-                    echo "../MuniSoft/reportes.php";
+                    echo "./reportes.php";
                     ?>" class="btn " >Reportes </a>
                 </div>
                 <div class="d-grid gap-2 botn mt-3">
                     <a href="<?php
-                    echo "../MuniSoft/reportes.php";
+                    echo "./usuarioss.php";
                     ?>" class="btn " >TUPA</a>
                 </div>
                 <div class="d-grid gap-2 botn mt-3">
                     <a href="<?php
-                    echo "../MuniSoft/editInfo.php";
+                    echo "./editInfo.php";
                     ?>" class="btn " >Editar Información </a>
                 </div>
                 <div class="d-grid gap-2 botn mt-3">

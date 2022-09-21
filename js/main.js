@@ -1,5 +1,7 @@
 $(document).ready(function() {    
-    $('#example').DataTable({        
+
+	$('#example').DataTable({    
+		
         language: {
                 "lengthMenu": "Mostrar _MENU_ registros",
                 "zeroRecords": "No se encontraron resultados",
@@ -23,23 +25,60 @@ $(document).ready(function() {
 				extend:    'excelHtml5',
 				text:      '<i class="fas fa-file-excel"></i> ',
 				titleAttr: 'Exportar a Excel',
-				className: 'btn btn-success'
+				download: 'open',
+				className: 'btn btn-success',
+				messageTop: 'Lista de Usuarios',
+				title:'Municipalidad Distrital de Humaya',
+				exportOptions: {
+					columns: [ 0, 1, 2, 3, 4, 5]
+				},
 			},
 			{
-				extend:    'pdfHtml5',
-				text:      '<i class="fas fa-file-pdf"></i> ',
-				titleAttr: 'Exportar a PDF',
-				className: 'btn btn-danger'
+				extend: 'pdfHtml5',
+				text: '<i class="fas fa-file-pdf"></i>',
+				download: 'open',
+				className: 'btn btn-danger',
+				messageTop: 'Lista de Usuarios',
+				title:'Municipalidad Distrital de Humaya',
+				exportOptions: {
+					columns: [ 0, 1, 2, 3, 4, 5]
+				},
+				
+				// centrar
+			
+				// fin
+				customize:function(doc) {
+					doc.styles.title = {
+						color: 'black',
+						fontSize: '20',
+						alignment: 'center'
+					}
+					doc.styles['td:nth-child(2)'] = { 
+						width: '100px',
+						'max-width': '100px'
+					}
+				}
 			},
 			{
 				extend:    'print',
 				text:      '<i class="fa fa-print"></i> ',
 				titleAttr: 'Imprimir',
-				className: 'btn btn-info'
+				className: 'btn btn-info',
+				messageTop: 'Lista de Usuarios',
+				title:'Municipalidad Distrital de Humaya',
+				exportOptions: {
+					columns: [ 0, 1, 2, 3, 4, 5]
+				},
 			},
 		]	        
     });  
     
-   
+	table.buttons( 0, null ).container().appendTo(
+		table.table().container()
+	);
+
 });
+
+
+
 
