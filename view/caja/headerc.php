@@ -18,7 +18,7 @@
 
                 <div class=" d-grid gap-2 botn mt-3">
                     <a href="<?php
-                    echo "./usuarioss.php?var=select";
+                     echo "./usuarioss.php";
                     ?>" class="btn " >Usuarios </a>
                 </div>
                 <div class="d-grid gap-2 botn mt-3">

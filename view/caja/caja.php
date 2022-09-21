@@ -37,11 +37,10 @@
                 <div class="col-9">
                     <?php
                     if (isset($urlDirection)) {
-                        if (isset($param)) {
-                            $param2 = $param ;
+                        if($lis ="listar"){
+                             include_once './view/' . $urlDirection . '.php';
                         }
-                        
-                        include_once './view/' . $urlDirection . '.php';
+                       
                     }
                     ?>
                 </div>

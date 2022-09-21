@@ -1,3 +1,10 @@
+<?php
+
+include_once './controller/usuarioController.php';
+$objCont = new UsuarioController();
+$data = $objCont->ListarC();
+
+?>
 
 
 <html lang="es">
@@ -63,21 +70,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php  echo $param2?>
-                                    <!-- <?php
-                                    foreach ($param as $users) {
-                                        echo '<tr>';
-                                            echo '<td>'. $users['nomb'] .$users['ap_pat'].$users['ap_mat'].'</td>';
-                                            echo '<td>'. $users['dni'] .'</td>';
+                               
+                                    <?php
+
+                                     foreach ($data as $users) {
+                                         echo '<tr>';
+                                             echo '<td>'. $users['nomb'] ." ".$users['ap_pat']." ".$users['ap_mat'].'</td>';
+                                             echo '<td>'. $users['dni'] .'</td>';
                                             echo '<td>'. $users['users'] .'</td>';
                                             echo '<td>'. $users['pass'] .'</td>';
-                                            echo '<td>'. $users['esta'] .'</td>';
+                                             echo '<td>'. $users['esta'] .'</td>';
                                             echo '<td>'. $users['rol'] .'</td>';
                                             echo '<td> <a href="#" ><i class="fa-solid fa-user-pen"></i></a></td>';
                                             echo '<td> <a href="#" ><i class="fa-solid fa-user-pen"></i></a></td>';
                                         echo'</tr>';
                                     }
-                                    ?>  -->
+                                    ?>  
                                     
                             </table>
                         </div>

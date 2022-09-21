@@ -1,8 +1,8 @@
 <?php
-require_once '../includes/mysql.php';
+require_once './includes/mysql.php';
 class UsuarioModel extends Mysql
 {
-   
+
     public function __construct()
     {
         parent::__construct();
